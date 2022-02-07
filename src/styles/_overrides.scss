@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        6: $spacer * 4,
+        7: $spacer * 5,
+        8: $spacer * 6,
+        9: $spacer * 7,
+);
+
+@import "~bootstrap/scss/utilities";
+
+$utilities: map-merge(
+                $utilities,
+                (
+                        "width": map-merge(
+                                        map-get($utilities, "width"),
+                                        (
+                                                values: map-merge(
+                                                                map-get(map-get($utilities, "width"), "values"),
+                                                                (10: 10%),
+                                                ),
+                                        ),
+                        ),
+                )
+);
+

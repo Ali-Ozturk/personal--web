@@ -1,0 +1,144 @@
+@import "overrides";
+@import "~bootstrap/scss/bootstrap";
+
+$red-color: #ff0042;
+
+.primary-marker {
+  color: $red-color;
+}
+
+.footer-icons a {
+  color: #212529;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  :hover {
+    color: $red-color;
+  }
+}
+
+#logo-svg-container {
+  $anime-time: 15s;
+  $box-size: 100px;
+  $logo-path: url("../assets/images/logo.png");
+
+  .logo-dimensions {
+    width: 100%;
+    height: 100%;
+    background: $logo-path;
+  }
+
+  .logo-font-specs {
+    font-family: 'Amiri', serif;
+    font-size: 4rem;
+    text-anchor: middle;
+    dominant-baseline: middle;
+  }
+
+  .logo-border-animated {
+    width: $box-size;
+    height: $box-size;
+    stroke-width: 4px;
+    fill: transparent;
+    animation: borderAnim $anime-time ease-in-out infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+    stroke: #000000;
+    stroke-dasharray: 50 150;
+    stroke-dashoffset: -474;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@keyframes borderAnim {
+  0% {
+    stroke-dasharray: 50 150;
+    stroke-dashoffset: -474;
+  }
+
+  10%, 15% {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: -474;
+  }
+
+  30%, 100% {
+    animation-timing-function: ease-out;
+    stroke-dasharray: 50 150;
+    stroke-dashoffset: -474;
+  }
+}
+.nav-link {
+  padding: 0.2rem 0.5rem;
+  margin: 0.3rem 1rem;
+}
+
+.nav-item {
+  padding-right: 1rem;
+
+  .active {
+    background:linear-gradient($red-color,$red-color) bottom no-repeat;
+    background-size:50% 2px;
+  }
+}
+
+.animation-test {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.animation-test-nav {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  opacity: 0;
+  transform: translateY(-50px);
+}
+
+.animation-test-jumbo {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+// Custom widths based on rem
+.w-rem-1 {
+  width: 1rem
+}
+
+.w-rem-2 {
+  width: 2rem
+}
+
+.w-rem-3 {
+  width: 3rem
+}
+
+.w-rem-4 {
+  width: 4rem
+}
+
+.w-rem-5 {
+  width: 5rem
+}
+
+.w-rem-6 {
+  width: 6rem
+}
+
+.w-rem-7 {
+  width: 7rem
+}
+
+.w-rem-8 {
+  width: 8rem
+}
+
+.w-rem-9 {
+  width: 9rem
+}
+
+.w-rem-10 {
+  width: 10rem
+}
