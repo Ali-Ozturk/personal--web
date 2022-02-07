@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from "react";
 import {Button} from "react-bootstrap";
 import gsap from "gsap";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const Frontpage: React.FC = () => {
     const jumboRef = useRef<HTMLInputElement | null>(null);
@@ -15,6 +16,7 @@ const Frontpage: React.FC = () => {
     });
 
     return <>
+        <ScrollIndicator/>
         <div className={'d-flex align-items-center justify-content-center h-100'}>
             <div className={'w-75'}>
                 <div className={'w-50 animation-test-jumbo'} ref={jumboRef}>
@@ -22,7 +24,8 @@ const Frontpage: React.FC = () => {
 
                     <h3>Jeg er <span className={'primary-marker'}>Alihan Øztürk</span></h3>
 
-                    <small className={'text-muted'}>Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    <small className={'text-muted'}>Contrary to popular belief, Lorem Ipsum is not simply random
+                        text.
                         It has roots in a piece of
                         classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
                         Latin

@@ -12,7 +12,6 @@ const MainLayout: React.FC = ({children}) => {
     return (
         <Container fluid className={'vh-100'}>
             <NavbarWithRouterProps/>
-            <ScrollIndicator />
             {children}
             <Footer/>
         </Container>

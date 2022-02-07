@@ -1,8 +1,6 @@
 @import "overrides";
 @import "~bootstrap/scss/bootstrap";
 
-$red-color: #ff0042;
-
 .primary-marker {
   color: $red-color;
 }
@@ -70,6 +68,19 @@ $red-color: #ff0042;
 
   .active {
     background: linear-gradient($red-color, $red-color) bottom no-repeat;
+    animation: navlink-border-animation 0.1s linear alternate forwards;
+    background-size: 50% 2px;
+    color: $red-color;
+  }
+}
+
+
+@keyframes navlink-border-animation {
+  0% {
+    background-size: 0% 2px;
+  }
+
+  100% {
     background-size: 50% 2px;
   }
 }
