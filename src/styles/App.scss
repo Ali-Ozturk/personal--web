@@ -59,8 +59,8 @@
 }
 
 .nav-link {
-  padding: 0.2rem 0.5rem;
-  margin: 0.3rem 1rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0 1rem;
 }
 
 .nav-item {
@@ -68,7 +68,7 @@
 
   .active {
     background: linear-gradient($red-color, $red-color) bottom no-repeat;
-    animation: navlink-border-animation 0.1s linear alternate forwards;
+    animation: navlink-border-animation 0.2s linear alternate;
     background-size: 50% 2px;
     color: $red-color;
   }
@@ -100,6 +100,11 @@
 .animation-test-jumbo {
   opacity: 0;
   transform: translateX(-50px);
+}
+
+.animation-test-footer {
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
 #scroll-indicator {

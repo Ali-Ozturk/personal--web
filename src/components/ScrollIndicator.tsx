@@ -11,7 +11,7 @@ const ScrollIndicator: React.FC = () => {
             if (scrolled <= scrollThreshold) {
                 setOpacity(1);
             }
-        }, 5000);
+        }, 6000);
 
         return () => clearTimeout(timer);
     }, [])

@@ -12,7 +12,7 @@ const Frontpage: React.FC = () => {
             .to(jumboRef.current, {
                 opacity: 1,
                 x: 0
-            }, "+=1")
+            }, "+=1.5")
     });
 
     return <>
@@ -20,7 +20,7 @@ const Frontpage: React.FC = () => {
         <div className={'d-flex align-items-center justify-content-center h-100'}>
             <div className={'w-75'}>
                 <div className={'w-50 animation-test-jumbo'} ref={jumboRef}>
-                    <footer className="blockquote-footer">Velkommen</footer>
+                    <footer className="blockquote-footer">Welcome,</footer>
 
                     <h3>Jeg er <span className={'primary-marker'}>Alihan Øztürk</span></h3>
 

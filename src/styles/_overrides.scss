@@ -3,8 +3,14 @@ $red-color: #ff0042;
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
+// font-family: 'Amiri', serif;
+//font-family: 'Hahmlet', serif;
+
+
 $nav-link-color: #000000;
 $nav-link-hover-color: $red-color;
+
+$font-family-base: 'Hahmlet', serif;
 
 $spacers: (
         0: 0,
