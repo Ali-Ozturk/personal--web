@@ -5,9 +5,7 @@ import {RouteComponentProps} from "react-router-dom";
 import {Link} from 'react-router-dom';
 import gsap from 'gsap';
 
-type NavigationPathParamsType = {}
-
-type PropsFromParent = RouteComponentProps<NavigationPathParamsType> & {}
+type PropsFromParent = RouteComponentProps & {}
 
 const NavigationBar: React.FC<PropsFromParent> = (props) => {
     const {location} = props;

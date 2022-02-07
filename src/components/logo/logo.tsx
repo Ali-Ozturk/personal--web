@@ -1,5 +1,4 @@
 import React, {MouseEventHandler} from 'react';
-import logo from "../../assets/images/logo.png";
 
 type PropsFromParent = {
     size?: number
