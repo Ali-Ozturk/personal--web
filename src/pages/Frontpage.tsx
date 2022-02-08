@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Tippy from "@tippyjs/react";
 import {followCursor} from 'tippy.js';
+import styled from "styled-components";
 
 const Frontpage: React.FC = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -48,23 +49,12 @@ const Frontpage: React.FC = () => {
         <ScrollIndicator/>
 
         <div className={'d-flex align-items-center justify-content-center vh-100'}>
-            <div className={'w-75'}>
-                <div className={'w-50 animation-test-jumbo'} ref={heroRef}>
-                    <footer className="blockquote-footer">Welcome,</footer>
+            <div className={'animation-test-jumbo'} ref={heroRef} style={{width: '22vw', marginRight: '10vh'}}>
 
-                    <h3>Jeg er <span className={'primary-marker'}>Alihan Øztürk</span></h3>
+                    <HeroParagraphOne>Welcome,</HeroParagraphOne>
+                    <h1 className={'text-center fw-bold'}>My name's Ali.</h1>
+                    <h5 className={'text-end'}>I make software.</h5>
 
-                    <small className={'text-muted'}>Contrary to popular belief, Lorem Ipsum is not simply random
-                        text.
-                        It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
-                        Latin
-                        professor at Hampden-Sydney College in Virginia. </small>
-
-                    <div className={'mt-5 testtttt'}>
-                        <Button onClick={() => alert('Test')}>DOWNLOAD CV</Button>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -77,5 +67,9 @@ const Frontpage: React.FC = () => {
         </div>
     </>;
 }
+
+const HeroParagraphOne = styled.h3`
+
+`
 
 export default Frontpage;
