@@ -4,6 +4,7 @@ import {Route, BrowserRouter as Router, Switch,} from "react-router-dom";
 import MainLayout from "./components/_layout/MainLayout";
 import Frontpage from "./pages/Frontpage";
 import Testpage from "./pages/Testpage";
+import 'tippy.js/dist/tippy.css';
 
 
 

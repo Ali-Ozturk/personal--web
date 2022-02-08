@@ -4,6 +4,8 @@ import gsap from "gsap";
 import ScrollIndicator from "../components/ScrollIndicator";
 import Portfolio from "./Portfolio";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
+import Tippy from "@tippyjs/react";
+import {followCursor} from 'tippy.js';
 
 const Frontpage: React.FC = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -73,8 +75,6 @@ const Frontpage: React.FC = () => {
         <div className={'pb-7'}>
 
         </div>
-
-
     </>;
 }
 

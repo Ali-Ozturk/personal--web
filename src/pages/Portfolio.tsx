@@ -1,6 +1,7 @@
 import React, {useEffect, useRef} from 'react';
-import image1 from '../assets/images/test1.png';
-import image2 from '../assets/images/test2.png';
+import kopraFullsize from '../assets/images/kopra-design.jpg';
+import madappFullsize from '../assets/images/madapp-desgin.jpg';
+import madappFullsizeExtra from '../assets/images/madapp-hover.jpg';
 import gsap from "gsap";
 import PortfolioThumbnail from "../components/PortfolioThumbnail";
 
@@ -36,30 +37,30 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
             <div className="col-10 justify-content-center m-auto testinggsap" {...props}>
                 <div className="row gx-5 gy-5">
                     <div className={'col-md-8'}>
-                        <PortfolioThumbnail description={"Lorem Ipsum"} thumbPicture={image1} hoverPicture={image2}/>
+                        <PortfolioThumbnail description={"Lorem Ipsum"} thumbPicture={kopraFullsize}/>
                     </div>
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
                             <div className={'col-12'}>
-                                <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={image1}
-                                                    hoverPicture={image2}/>
+                                <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={madappFullsizeExtra}
+                                                    hoverPicture={madappFullsize}/>
                             </div>
                             <div className={'col-12'}>
                                 <PortfolioThumbnail description={"KOPRA Testing"}
-                                                    thumbPicture={image1}
-                                                    hoverPicture={image2}/>
+                                                    thumbPicture={madappFullsize}
+                                                    hoverPicture={kopraFullsize}/>
                             </div>
                         </div>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"New Software Name"}
-                                            thumbPicture={image1}
-                                            hoverPicture={image2}/>
+                                            thumbPicture={kopraFullsize}
+                                            hoverPicture={kopraFullsize}/>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"An elegant transition"}
-                                            thumbPicture={image1}
-                                            hoverPicture={image2}/>
+                                            thumbPicture={kopraFullsize}
+                                            hoverPicture={kopraFullsize}/>
                     </div>
                 </div>
             </div>
