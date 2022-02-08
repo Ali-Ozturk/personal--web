@@ -3,20 +3,19 @@ import React, {useEffect} from 'react';
 
 const ScrollIndicator: React.FC = () => {
     const [opacity, setOpacity] = React.useState(0);
-    const scrollThreshold = 100;
+    const scrollThreshold = 20;
 
     useEffect(() => {
         const timer = setTimeout(() => {
             const scrolled = document.documentElement.scrollTop;
             if (scrolled <= scrollThreshold) {
-                setOpacity(1);
+                setOpacity(.5);
             }
         }, 6000);
 
         return () => clearTimeout(timer);
     }, [])
 
-    // TODO: Ew. Performance issues maybe? Happens on every scroll event ...
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const scrolled = document.documentElement.scrollTop;
@@ -25,7 +24,7 @@ const ScrollIndicator: React.FC = () => {
                 setOpacity(0)
             }
             else if (scrolled <= scrollThreshold){
-                setOpacity(1)
+                setOpacity(0.5)
             }
         });
     }, []);

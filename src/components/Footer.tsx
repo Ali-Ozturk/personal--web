@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
     return (
         <Row className={'fixed-bottom'}>
             <Col className={'m-5 footer-icons animation-test-footer'} ref={footerRef}>
-                <a target={'_blank'} href={'https://www.linkedin.com/in/alihanozturkdk/'} className={'m-1 h5'}
+                <a target={'_blank'} href={'https://www.linkedin.com/in/alihanozturkdk/'} className={'m-1 h6'}
                    rel="noreferrer"> <FaLinkedin/> </a>
-                <a target={'_blank'} href={'https://github.com/Ali-Ozturk'} className={'m-1 h5'} rel="noreferrer">
+                <a target={'_blank'} href={'https://github.com/Ali-Ozturk'} className={'m-1 h6'} rel="noreferrer">
                     <FaGithub/> </a>
-                <a target={'_blank'} href={'https://www.instagram.com/aliyo/'} className={'m-1 h5'} rel="noreferrer">
+                <a target={'_blank'} href={'https://www.instagram.com/aliyo/'} className={'m-1 h6'} rel="noreferrer">
                     <FaInstagram/> </a>
             </Col>
         </Row>);

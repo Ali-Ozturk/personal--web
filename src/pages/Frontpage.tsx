@@ -2,24 +2,50 @@ import React, {useEffect, useRef} from "react";
 import {Button} from "react-bootstrap";
 import gsap from "gsap";
 import ScrollIndicator from "../components/ScrollIndicator";
+import Portfolio from "./Portfolio";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 const Frontpage: React.FC = () => {
-    const jumboRef = useRef<HTMLInputElement | null>(null);
-    const timeline = gsap.timeline({defaults: {ease: "power4.inOut", duration: 2}})
+    gsap.registerPlugin(ScrollTrigger);
+
+    const heroRef = useRef<HTMLDivElement | null>(null);
+    const portfolioRef = useRef<HTMLDivElement | null>(null);
+    const timeline = gsap.timeline({
+        defaults: {
+            ease: "power4.inOut", duration: 2,
+        }
+    })
 
     useEffect(() => {
         timeline
-            .to(jumboRef.current, {
+            .to(heroRef.current, {
                 opacity: 1,
-                x: 0
-            }, "+=1.5")
+                x: 0,
+                onComplete: () => {
+                    gsap.fromTo(
+                        heroRef.current,
+                        {},
+                        {
+                            opacity: 0,
+                            y: -100,
+                            scrollTrigger: {
+                                trigger: heroRef.current,
+                                start: "top top",
+                                end: "bottom 80px",
+                                scrub: true,
+                            },
+                        })
+                }
+            }, "+=1.5");
+
+
     });
 
     return <>
         <ScrollIndicator/>
-        <div className={'d-flex align-items-center justify-content-center h-100'}>
+        <div className={'d-flex align-items-center justify-content-center vh-100'}>
             <div className={'w-75'}>
-                <div className={'w-50 animation-test-jumbo'} ref={jumboRef}>
+                <div className={'w-50 animation-test-jumbo'} ref={heroRef}>
                     <footer className="blockquote-footer">Welcome,</footer>
 
                     <h3>Jeg er <span className={'primary-marker'}>Alihan Øztürk</span></h3>
@@ -31,12 +57,18 @@ const Frontpage: React.FC = () => {
                         Latin
                         professor at Hampden-Sydney College in Virginia. </small>
 
-                    <div className={'mt-5'}>
+                    <div className={'mt-5 testtttt'}>
                         <Button onClick={() => alert('Test')}>DOWNLOAD CV</Button>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div ref={portfolioRef}>
+            <Portfolio/>
+        </div>
+
+
     </>;
 }
 

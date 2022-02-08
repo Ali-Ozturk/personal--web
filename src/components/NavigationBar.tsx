@@ -30,8 +30,8 @@ const NavigationBar: React.FC<PropsFromParent> = (props) => {
     });
 
     return (
-        <Row className={'fixed-top pt-6'}>
-            <Col className={'mx-7'}>
+        <Row className={'fixed-top pt-5'}>
+            <Col className={'mx-5'}>
                 <div ref={logoRef} className={'animation-test'}>
                     <AnimatedLogo onClick={() => {
                         // TODO: Maybe implement a check. If onFrontpage => scrollTop || else => goto frontpage
@@ -48,7 +48,7 @@ const NavigationBar: React.FC<PropsFromParent> = (props) => {
             </Col>
 
             <Col xs={7} className={'d-flex align-items-center justify-content-end'}>
-                <Nav activeKey={location.pathname} className="text-uppercase mx-7 animation-test-nav" ref={navRef}>
+                <Nav activeKey={location.pathname} className="text-uppercase mx-7 animation-test-nav fs-7" ref={navRef}>
                     <Nav.Item>
                         <Nav.Link as={Link} eventKey={'/'} to="/">Work</Nav.Link>
                     </Nav.Item>
