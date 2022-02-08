@@ -43,6 +43,7 @@ const Frontpage: React.FC = () => {
 
     return <>
         <ScrollIndicator/>
+
         <div className={'d-flex align-items-center justify-content-center vh-100'}>
             <div className={'w-75'}>
                 <div className={'w-50 animation-test-jumbo'} ref={heroRef}>
@@ -66,6 +67,10 @@ const Frontpage: React.FC = () => {
 
         <div ref={portfolioRef}>
             <Portfolio/>
+        </div>
+
+        <div className={'pb-7'}>
+
         </div>
 
 

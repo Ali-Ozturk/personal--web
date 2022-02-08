@@ -1,7 +1,7 @@
-import React, {MutableRefObject, useEffect, useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import img from '../assets/images/example-pic.png';
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import PortfolioThumbnail from "../components/PortfolioThumbnail";
 
 type PropsFromParent = JSX.IntrinsicElements["div"] & {}
 
@@ -34,15 +34,25 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
         <div ref={portfolioRef}>
             <div className="col-10 justify-content-center m-auto testinggsap" {...props}>
                 <div className="row gx-5 gy-5">
-                    <img src={img} className="col-md-8"/>
+                    <div className={'col-md-8'}>
+                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                    </div>
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
-                            <img src={img} className="col-12"/>
-                            <img src={img} className="col-12"/>
+                            <div className={'col-12'}>
+                                <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                            </div>
+                            <div className={'col-12'}>
+                                <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                            </div>
                         </div>
                     </div>
-                    <img src={img} className="col-6"/>
-                    <img src={img} className="col-6"/>
+                    <div className={'col-6'}>
+                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                    </div>
+                    <div className={'col-6'}>
+                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                    </div>
                 </div>
             </div>
         </div>
