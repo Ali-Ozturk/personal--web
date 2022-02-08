@@ -1,5 +1,6 @@
 import React, {useEffect, useRef} from 'react';
-import img from '../assets/images/example-pic.png';
+import image1 from '../assets/images/test1.png';
+import image2 from '../assets/images/test2.png';
 import gsap from "gsap";
 import PortfolioThumbnail from "../components/PortfolioThumbnail";
 
@@ -35,23 +36,30 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
             <div className="col-10 justify-content-center m-auto testinggsap" {...props}>
                 <div className="row gx-5 gy-5">
                     <div className={'col-md-8'}>
-                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                        <PortfolioThumbnail description={"Lorem Ipsum"} thumbPicture={image1} hoverPicture={image2}/>
                     </div>
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
                             <div className={'col-12'}>
-                                <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                                <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={image1}
+                                                    hoverPicture={image2}/>
                             </div>
                             <div className={'col-12'}>
-                                <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                                <PortfolioThumbnail description={"KOPRA Testing"}
+                                                    thumbPicture={image1}
+                                                    hoverPicture={image2}/>
                             </div>
                         </div>
                     </div>
                     <div className={'col-6'}>
-                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                        <PortfolioThumbnail description={"New Software Name"}
+                                            thumbPicture={image1}
+                                            hoverPicture={image2}/>
                     </div>
                     <div className={'col-6'}>
-                        <PortfolioThumbnail thumbPicture={img} hoverPicture={img}/>
+                        <PortfolioThumbnail description={"An elegant transition"}
+                                            thumbPicture={image1}
+                                            hoverPicture={image2}/>
                     </div>
                 </div>
             </div>

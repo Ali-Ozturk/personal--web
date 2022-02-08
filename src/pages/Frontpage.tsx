@@ -31,7 +31,8 @@ const Frontpage: React.FC = () => {
                             scrollTrigger: {
                                 trigger: heroRef.current,
                                 start: "top top",
-                                end: "bottom 80px",
+                                endTrigger: '.vh-100',
+                                end: "bottom",
                                 scrub: true,
                             },
                         })

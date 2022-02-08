@@ -16,8 +16,11 @@ const Footer: React.FC = () => {
     });
 
     return (
-        <Row className={'fixed-bottom'}>
-            <Col className={'m-5 footer-icons animation-test-footer'} ref={footerRef}>
+        <Row className={'fixed-bottom'} style={{
+            right: 'auto',
+            marginLeft: '2rem'
+        }}>
+            <Col className={'my-5 footer-icons animation-test-footer'} ref={footerRef}>
                 <a target={'_blank'} href={'https://www.linkedin.com/in/alihanozturkdk/'} className={'m-1 h6'}
                    rel="noreferrer"> <FaLinkedin/> </a>
                 <a target={'_blank'} href={'https://github.com/Ali-Ozturk'} className={'m-1 h6'} rel="noreferrer">
@@ -25,7 +28,8 @@ const Footer: React.FC = () => {
                 <a target={'_blank'} href={'https://www.instagram.com/aliyo/'} className={'m-1 h6'} rel="noreferrer">
                     <FaInstagram/> </a>
             </Col>
-        </Row>);
+        </Row>
+    );
 }
 
 export default Footer;

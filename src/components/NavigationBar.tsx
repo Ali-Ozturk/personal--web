@@ -1,8 +1,7 @@
-import React, {useRef, useEffect} from "react";
+import React, {useEffect, useRef} from "react";
 import {Col, Nav, Row} from "react-bootstrap";
 import AnimatedLogo from "./logo/logo";
-import {RouteComponentProps} from "react-router-dom";
-import {Link} from 'react-router-dom';
+import {Link, RouteComponentProps} from "react-router-dom";
 import gsap from 'gsap';
 
 type PropsFromParent = RouteComponentProps & {}
@@ -14,6 +13,7 @@ const NavigationBar: React.FC<PropsFromParent> = (props) => {
 
     const timeline = gsap.timeline({defaults: {ease: "power4.inOut", duration: 2}})
 
+    // TODO: Rework animations to use breakpoints from existing stuff - if you refresh at bottom page .vh-100
     useEffect(() => {
         timeline
             .to(logoRef.current, {
@@ -25,7 +25,23 @@ const NavigationBar: React.FC<PropsFromParent> = (props) => {
             .to(navRef.current, {
                 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
                 opacity: 1,
-                y: 0
+                y: 0,
+                onComplete: () => {
+                    gsap.fromTo(
+                        navRef.current,
+                        {},
+                        {
+                            opacity: 0,
+                            y: -100,
+                            scrollTrigger: {
+                                trigger: navRef.current,
+                                start: "top top",
+                                endTrigger: '.vh-100',
+                                end: "bottom",
+                                scrub: true,
+                            },
+                        })
+                }
             }, "-=2")
     });
 
