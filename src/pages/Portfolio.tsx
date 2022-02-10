@@ -39,7 +39,7 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
                     <div className={'col-md-8'}>
                         <PortfolioThumbnail description={"KOPRA - Kontorelevernes praktiksystem"}
                                             thumbPicture={kopraFullsize}
-                                            technologies={['Java', 'Spring', 'ReactJS']}
+                                            technologies={['Java', 'Spring Boot', 'MSSQL', 'React']}
                                             partners={['Køge Handelsskole']}/>
                     </div>
                     <div className="col-6 col-md-4">
@@ -47,7 +47,7 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
                             <div className={'col-12'}>
                                 <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={madappFullsizeExtra}
                                                     hoverPicture={madappFullsize}
-                                                    technologies={['React-Native', 'C#']}
+                                                    technologies={['React Native', 'C#']}
                                                     partners={['Aalborg University']}/>
                             </div>
                             <div className={'col-12 bordered'}>

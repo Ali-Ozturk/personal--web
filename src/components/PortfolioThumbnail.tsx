@@ -26,7 +26,7 @@ const PortfolioThumbnail: React.FC<PropsFromParent> = ({
     return (
         <>
             <Tippy content={description} followCursor={true} plugins={[followCursor]}>
-                <PortfolioContainer className={'d-flex justify-content-center'}>
+                <PortfolioContainer className={'d-flex justify-content-center rounded'}>
                     <Link to={url ?? '#'}>
                         <img src={thumbPicture} className={'portfolio-image primary-image'}/>
                         {hoverPicture &&
