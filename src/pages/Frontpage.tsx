@@ -49,12 +49,18 @@ const Frontpage: React.FC = () => {
         <ScrollIndicator/>
 
         <div className={'d-flex align-items-center justify-content-center vh-100'}>
-            <div className={'animation-test-jumbo'} ref={heroRef} style={{width: '22vw', marginRight: '10vh'}}>
-
-                    <HeroParagraphOne>Welcome,</HeroParagraphOne>
-                    <h1 className={'text-center fw-bold'}>My name's Ali.</h1>
-                    <h5 className={'text-end'}>I make software.</h5>
-
+            <div className={'animation-test-jumbo'} ref={heroRef} style={{width: '25vw', marginRight: '6vw'}}>
+                <div className={"row"}>
+                    <div className={'col-12'}>
+                        <h3>Welcome,</h3>
+                    </div>
+                    <div className={'col-12'}>
+                        <h1 className={'text-center fw-bold display-5'}>my name's Ali</h1>
+                    </div>
+                    <div className={'col-12'}>
+                        <h5 className={'text-end'}>I make IT solutions.</h5>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -67,9 +73,5 @@ const Frontpage: React.FC = () => {
         </div>
     </>;
 }
-
-const HeroParagraphOne = styled.h3`
-
-`
 
 export default Frontpage;

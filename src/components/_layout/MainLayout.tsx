@@ -10,8 +10,11 @@ import gsap from "gsap";
 
 const NavbarWithRouterProps = withRouter(NavigationBar);
 
+// TODO: Also add pre-load functionality
+// TODO-Future: Add locale options
+
 const MainLayout: React.FC = ({children}) => {
-    const timeline = gsap.timeline({defaults: {ease: "power2", duration: 1.5}})
+    const timeline = gsap.timeline({defaults: {ease: "power2", duration: 1.2}})
     const refSVGBackground = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -40,7 +43,7 @@ const MainLayout: React.FC = ({children}) => {
 const SVGBackground = styled.div`
   background: url(${svgBackgroundOverlay}) no-repeat, url(${svgBackground}) no-repeat;
   background-repeat: no-repeat;
-  background-position: center top 50%;
+  background-position: center top 40%;
   background-size: 100%;
   height: 100%;
   margin: 0;

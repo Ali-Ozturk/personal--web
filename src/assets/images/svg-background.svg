@@ -1,11 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="499" viewBox="0 0 1920 499">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="499" viewBox="0 0 1920 499">
   <defs>
     <style>
       .cls-1 {
-        fill: #ff0042;
         fill-rule: evenodd;
+        fill: url(#linear-gradient);
       }
     </style>
+    <linearGradient id="linear-gradient" x1="1006.44" y1="770.875" x2="1006.44" y2="271.875" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f87281"/>
+      <stop offset="0.2" stop-color="#f34e55"/>
+      <stop offset="0.5" stop-color="#ec3045"/>
+      <stop offset="0.796" stop-color="#f4575e"/>
+      <stop offset="1" stop-color="#f4575e"/>
+    </linearGradient>
   </defs>
-  <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-1" d="M-87,459s523.282,123.1,557-50c30.488-156.512,692.61-213.39,782,16s681,48.976,681-62,73.88,35.829,78,49,230.71,319.658-56,323-483.88-80.157-739-218C942.688,369.326,488.4,406.61,417,674,368.177,856.85-88.858,741.784-76,647-62.46,547.192-87,459-87,459Z" transform="translate(0 -271.875)"/>
+  <path id="Shape_2_copy_4" data-name="Shape 2 copy 4" class="cls-1" d="M-87,459s523.282,123.1,557-50c30.488-156.512,692.61-213.39,782,16s681,48.976,681-62,73.88,35.829,78,49,230.71,319.658-56,323-483.88-80.157-739-218C942.688,369.326,488.4,406.61,417,674,368.177,856.85-88.858,741.784-76,647-62.46,547.192-87,459-87,459Z" transform="translate(0 -271.875)"/>
 </svg>
