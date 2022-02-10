@@ -37,30 +37,35 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
             <div className="col-10 justify-content-center m-auto testinggsap" {...props}>
                 <div className="row gx-5 gy-5">
                     <div className={'col-md-8'}>
-                        <PortfolioThumbnail description={"Lorem Ipsum"} thumbPicture={kopraFullsize}/>
+                        <PortfolioThumbnail description={"KOPRA - Kontorelevernes praktiksystem"}
+                                            thumbPicture={kopraFullsize}
+                                            technologies={['Java', 'Spring', 'ReactJS']}
+                                            partners={['Køge Handelsskole']}/>
                     </div>
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
                             <div className={'col-12'}>
                                 <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={madappFullsizeExtra}
-                                                    hoverPicture={madappFullsize}/>
+                                                    hoverPicture={madappFullsize}
+                                                    technologies={['React-Native', 'C#']}
+                                                    partners={['Aalborg University']}/>
                             </div>
-                            <div className={'col-12'}>
+                            <div className={'col-12 bordered'}>
                                 <PortfolioThumbnail description={"KOPRA Testing"}
                                                     thumbPicture={madappFullsize}
-                                                    hoverPicture={kopraFullsize}/>
+                                                    hoverPicture={kopraFullsize} technologies={['Example']}/>
                             </div>
                         </div>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"New Software Name"}
                                             thumbPicture={kopraFullsize}
-                                            hoverPicture={kopraFullsize}/>
+                                            hoverPicture={kopraFullsize} technologies={['Example']}/>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"An elegant transition"}
                                             thumbPicture={kopraFullsize}
-                                            hoverPicture={kopraFullsize}/>
+                                            hoverPicture={kopraFullsize} technologies={['Example']}/>
                     </div>
                 </div>
             </div>
