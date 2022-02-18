@@ -36,8 +36,18 @@
 
 * **Portfolio content**
 
-  1. Patienttavlen (PHP, ReactJS, MSSQL)
-  2. AIS Data warehouse (PostgreSQL, PostGIS, Python, ReactJS, (?) PygramETL, C#)
+  1. (Done) Patienttavlen (PHP, ReactJS, MSSQL)
+  2. (Future) AIS Data warehouse (PostgreSQL, PostGIS, Python, ReactJS, (?) PygramETL, C#)
 
    
+
+
+
+**Personal notes**
+
+* Patitenttavlen ref.
+
+```
+<a href="https://www.freepik.com/psd/mockup">Mockup psd created by zlatko_plamenov - www.freepik.com</a>
+```
 

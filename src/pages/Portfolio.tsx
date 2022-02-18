@@ -2,10 +2,19 @@ import React, {useEffect, useRef} from 'react';
 import kopraFullsize from '../assets/images/kopra-design.jpg';
 import madappFullsize from '../assets/images/madapp-desgin.jpg';
 import madappFullsizeExtra from '../assets/images/madapp-hover.jpg';
+import patienttavleFullsize from '../assets/images/patienttavlen-layout.jpg';
+import patienttavleHover from '../assets/images/patienttavlen-hover.jpg';
+import compingSoonPicture from '../assets/images/coming-soon.jpg';
 import gsap from "gsap";
 import PortfolioThumbnail from "../components/PortfolioThumbnail";
 
 type PropsFromParent = JSX.IntrinsicElements["div"] & {}
+
+/*
+* TODO-Future: When needed add following columns. Requires more portfolio content
+*
+*
+*  */
 
 const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
     const portfolioRef = useRef<HTMLDivElement | null>(null);
@@ -45,27 +54,30 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
                             <div className={'col-12'}>
-                                <PortfolioThumbnail description={"Testing thumbnail"} thumbPicture={madappFullsizeExtra}
+                                <PortfolioThumbnail description={"On The Way - Semester project"}
+                                                    thumbPicture={madappFullsizeExtra}
                                                     hoverPicture={madappFullsize}
-                                                    technologies={['React Native', 'C#']}
+                                                    technologies={['C#', 'PostgreSQL', 'React Native']}
                                                     partners={['Aalborg University']}/>
                             </div>
                             <div className={'col-12 bordered'}>
-                                <PortfolioThumbnail description={"KOPRA Testing"}
-                                                    thumbPicture={madappFullsize}
-                                                    hoverPicture={kopraFullsize} technologies={['Example']}/>
+                                <PortfolioThumbnail description={"Patienttavlen"}
+                                                    thumbPicture={patienttavleFullsize}
+                                                    hoverPicture={patienttavleHover}
+                                                    technologies={['PHP', 'MSSQL', 'React']}
+                                                    partners={['Rigshospitalet']}/>
                             </div>
                         </div>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"New Software Name"}
                                             thumbPicture={kopraFullsize}
-                                            hoverPicture={kopraFullsize} technologies={['Example']}/>
+                                            technologies={['Example']}/>
                     </div>
                     <div className={'col-6'}>
                         <PortfolioThumbnail description={"An elegant transition"}
                                             thumbPicture={kopraFullsize}
-                                            hoverPicture={kopraFullsize} technologies={['Example']}/>
+                                            technologies={['']}/>
                     </div>
                 </div>
             </div>
