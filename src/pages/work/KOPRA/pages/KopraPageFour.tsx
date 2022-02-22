@@ -23,8 +23,8 @@ const Device = styled.img`
 const Ellipse = styled.div`
   position: relative;
   background-color: #C5DEF5;
-  width: 45%;
-  height: 90%;
+  height: 90vh;
+  min-width: 90vh;
   border-radius: 50%;
 `
 

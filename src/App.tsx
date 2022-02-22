@@ -6,10 +6,12 @@ import Frontpage from "./pages/Frontpage";
 import Testpage from "./pages/Testpage";
 import 'tippy.js/dist/tippy.css';
 import KopraPage from "./pages/work/KOPRA/KOPRA";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <Switch>
                 <Route path='/login' component={Frontpage}/>
                 <Route exact path={'/test'} component={Testpage}/>
