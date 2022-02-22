@@ -14,19 +14,20 @@
 * TODO: Make a proper footer - find inspiration on a simple approach
   * Maybe some animation for extra wow effect
 
+**Work page (KOPRA) `/kopra`**
 
+* BUG: Navigation bar hides upon loading - perhaps it should be hidde?
+* TODO: Create hover over effect on device mockup one page
+* TODO: Create animations and add some decorative elements
+* TODO: Find proper font and make it concurrent on the whole page
 
 ### To be implemented in prioritized order
 
-1. **Generic work page** `/work/{id}`
-
-   Important! The generic part is only for primary layout. Each page should have it's own feel that is tailored for each project.
-
-2. **About page** `/about`
-
-3. **Contact page** `/contact`
-
-
+1. **About page** `/about`
+2. **Contact page** `/contact`
+3. **Work page** `/hearttech`
+4. **Work page** `/onthego`
+5. **Work page** `/aisdw`
 
 ### Brainstorm and ideas
 
@@ -36,13 +37,8 @@
 
 * **Portfolio content**
 
-  1. (Done) Patienttavlen (PHP, ReactJS, MSSQL)
   2. (Future) AIS Data warehouse (PostgreSQL, PostGIS, Python, ReactJS, (?) PygramETL, C#)
-
-   
-
-
-
+    
 **Personal notes**
 
 * Patitenttavlen ref.

@@ -4,7 +4,6 @@ import madappFullsize from '../assets/images/madapp-desgin.jpg';
 import madappFullsizeExtra from '../assets/images/madapp-hover.jpg';
 import patienttavleFullsize from '../assets/images/patienttavlen-layout.jpg';
 import patienttavleHover from '../assets/images/patienttavlen-hover.jpg';
-import compingSoonPicture from '../assets/images/coming-soon.jpg';
 import gsap from "gsap";
 import PortfolioThumbnail from "../components/PortfolioThumbnail";
 
@@ -49,7 +48,8 @@ const Portfolio: React.FC<PropsFromParent> = ({...props}) => {
                         <PortfolioThumbnail description={"KOPRA - Kontorelevernes praktiksystem"}
                                             thumbPicture={kopraFullsize}
                                             technologies={['Java', 'Spring Boot', 'MSSQL', 'React']}
-                                            partners={['Køge Handelsskole']}/>
+                                            partners={['Køge Handelsskole']}
+                                            url={'/kopra'}/>
                     </div>
                     <div className="col-6 col-md-4">
                         <div className="row gx-5 gy-5">
