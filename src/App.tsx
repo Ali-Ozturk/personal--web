@@ -13,8 +13,6 @@ function App() {
         <Router>
             <ScrollToTop />
             <Switch>
-                <Route path='/login' component={Frontpage}/>
-                <Route exact path={'/test'} component={Testpage}/>
                 <Route exact path={'/kopra'} component={KopraPage}/>
 
                 <MainLayout>
