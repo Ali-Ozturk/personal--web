@@ -1,14 +1,39 @@
-{
-    "name": "",
-    "short_name": "",
-    "icons": [
+ {
+   "short_name": "Alihan Øztürk | Personal Portfolio",
+   "name": "Alihan Øztürk | MSc. Software, Full Stack Developer and Project Manager",
+   "icons": [
        {
           "src": "/android-chrome-192x192.png",
           "sizes": "192x192",
           "type": "image/png"
        }
-    ],
-    "theme_color": "#FFFFFF",
-    "background_color": "#FFFFFF",
-    "display": "standalone"
+   ],
+   "background_color": "#3367D6",
+   "display": "standalone",
+   "start_url": "/",
+   "theme_color": "#3367D6",
+   "shortcuts": [
+     {
+       "name": "Alihan Øztürk | Projects",
+       "short_name": "Alihan Øztürk - Projects",
+       "description": "A portfolio for projects that I have been a part of",
+       "url": "/",
+       "icons": [{ "src": "/images/kopra-design.jpg", "sizes": "1440x1024" }]
+     },
+     {
+       "name": "Alihan Øztürk | Projects - KOPRA",
+       "short_name": "A. KOPRA",
+       "description": "Project showcase of KOPRA. A standalone system created for Køge Handelsskole",
+       "url": "/kopra",
+       "icons": [{ "src": "/images/kopra-design.jpg", "sizes": "1440x1024" }]
+     }
+   ],
+   "description": "A personal portfolio for Alihan Øztürk. The webpage includes details about my journey and the projects that I have been a part of.",
+   "screenshots": [
+     {
+       "src": "/images/kopra-design.jpg",
+       "type": "image/png",
+       "sizes": "1440x1024"
+     }
+   ]
  }

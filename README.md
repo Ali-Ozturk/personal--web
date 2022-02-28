@@ -16,10 +16,12 @@
 
 **Work page (KOPRA) `/kopra`**
 
-* BUG: Navigation bar hides upon loading - perhaps it should be hidde?
+* BUG: Navigation bar hides upon loading - perhaps it should be hidden?
 * TODO: Create hover over effect on device mockup one page
 * TODO: Create animations and add some decorative elements
 * TODO: Find proper font and make it concurrent on the whole page
+* TODO: Add a technologies section describing the technologies used
+* TODO-Maybe: Add a history section explaining the origins
 
 ### To be implemented in prioritized order
 
@@ -38,7 +40,8 @@
 * **Portfolio content**
 
   2. (Future) AIS Data warehouse (PostgreSQL, PostGIS, Python, ReactJS, (?) PygramETL, C#)
-    
+  
+
 **Personal notes**
 
 * Patitenttavlen ref.
