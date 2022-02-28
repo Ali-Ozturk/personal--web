@@ -8,10 +8,10 @@ const KopraPageFive = () => {
     return (
         <section className={'one-page d-flex flex-column align-items-center'}>
 
-            <h3 className={'text-uppercase fw-bold font-monospace py-8'}
+            <h4 className={'text-uppercase fw-bold font-monospace py-8'}
                 style={{letterSpacing: '.6rem'}}>
-                Developers
-            </h3>
+                Udviklerne
+            </h4>
 
             <div className={'row gx-5'}>
                 <div className={'col-4'}>
