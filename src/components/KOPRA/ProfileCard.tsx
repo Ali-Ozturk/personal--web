@@ -1,14 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
 
+export type SocialDetails = {
+    url: string;
+    icon: any;
+}
+
 type PropsFromParent = {
     image: string;
     name: string;
     title: string;
-    socials?: any[];
+    socials?: SocialDetails[];
 }
 
-const ProfileCard: React.FC<PropsFromParent> = ({image, name, title}) => {
+const ProfileCard: React.FC<PropsFromParent> = ({image, name, title, socials}) => {
     return (
         <CardWrapper className="card text-center position-relative">
             <CardHeader className="card-header"/>
@@ -20,13 +25,20 @@ const ProfileCard: React.FC<PropsFromParent> = ({image, name, title}) => {
                 <p className="card-text">{title}</p>
             </div>
 
-            <div className="card-footer text-muted">
-                social links
+            <div className="card-footer">
+                {socials?.sort((a, b) => a.url.localeCompare(b.url)).map((social, key) => {
+                    return <SocialIcon target={'_blank'} href={social.url} className={'m-2 h5 text-decoration-none'}
+                                       rel="noreferrer"> {social.icon} </SocialIcon>
+                })}
             </div>
         </CardWrapper>
     );
 };
 
+const SocialIcon = styled.a`
+  color: #8E8E8E;
+  font-size: 1.2rem;
+`
 
 const CardWrapper = styled.div`
   width: 15rem;
